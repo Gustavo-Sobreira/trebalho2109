@@ -1,0 +1,17 @@
+name: CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  CI:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Buildar dockerfile
+        run: echo "docker build"
+      - name: Logar Docker Hub
+        run: echo "Logar"
+      - name: Upar imagem
+        run: echo "buildado"
